@@ -1,13 +1,38 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>RoadAware</title>
+
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 </head>
+
 <body>
 
-    <h1>RoadAware</h1>
-    <p>Welcome to the project.</p>
+    <nav>
+        <h1>RoadAware</h1>
+
+        <a href="/">Home</a>
+        <a href="/hazards">Hazards</a>
+    </nav>
+
+    <div class="container">
+
+        <h2>Road Hazard Dashboard</h2>
+
+        <div class="card">
+            <h3>Pothole Warning</h3>
+            <p>Severity: High</p>
+            <p>Location: Main Street</p>
+        </div>
+
+        <div class="card">
+            <h3>Traffic Congestion</h3>
+            <p>Severity: Medium</p>
+            <p>Location: Western Highway</p>
+        </div>
+
+    </div>
 
 </body>
 </html>
